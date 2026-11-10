@@ -61,7 +61,7 @@ console.log(`\nOppgave 4: ${MOMS} * ${pris} = ${prisMoms} + ${pris} = ${prisMoms
 // Forventet: ingenting i konsollen
 // Max spillere skal endres manuelt derfor valgte jeg const
 const MAXSPILLERE = 16
-// Liv kan endres hvis personen dør i spillet derfor valgte heg let
+// Liv kan endres hvis personen dør i spillet derfor valgte jeg let
 let liv = 3
 // Høyden kan ikke endres derfor valgte jeg const
 const fløyaH = 671
