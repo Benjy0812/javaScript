@@ -59,6 +59,14 @@ console.log(`\nOppgave 4: ${MOMS} * ${pris} = ${prisMoms} + ${pris} = ${prisMoms
 // maks antall spillere på serveren (16), antall liv igjen (3),
 // høyden på Fløya (671), temperaturen i Tromsø nå (-4).
 // Forventet: ingenting i konsollen
+// Max spillere skal endres manuelt derfor valgte jeg const
+const MAXSPILLERE = 16
+// Liv kan endres hvis personen dør i spillet derfor valgte heg let
+let liv = 3
+// Høyden kan ikke endres derfor valgte jeg const
+const fløyaH = 671
+// Temperatur vill endres derfor valgte jeg let
+let temp = -4
 
 
 // ---------------- TEKST OG TALL ----------------
