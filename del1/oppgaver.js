@@ -1,4 +1,3 @@
-// =====================================================
 // Steg 1 - Oppgaver: Grunnleggende JS
 // Kjør fila i terminalen:   node steg1-grunnlag.js
 //
@@ -7,7 +6,6 @@
 //
 // Tips: skriv oppgavenummeret i console.log, så ser du hva som er hva:
 //   console.log("Oppgave 2:", hp);
-// =====================================================
 
 
 // ---------------- VARIABLER ----------------
@@ -20,9 +18,9 @@
 // Skriv ut begge på samme linje.
 // Forventet: Ola Nordmann  (men ditt navn)
 
-let navn = "Benjamin"
-let etternavn = "Robertsen"
-console.log("\nOppgave 1:", navn, etternavn)
+let firstName = "Benjamin"
+let lastName = "Robertsen"
+console.log("\nOppgave 1:", firstName, lastName)
 
 
 // Oppgave 2 (grunnleggende)
@@ -39,7 +37,7 @@ console.log("\nOppgave 2:", hp)
 // Lag const PI = 3.14159. Prøv deretter å skrive PI = 3; og kjør fila.
 // Skriv i oppgavearket hva feilmeldingen betyr, og fjern linja igjen.
 // Forventet: TypeError: Assignment to constant variable.
-const PI = 3.14159 
+const PI = 3.14159
 // PI = 3
 console.log("\nOppgave 3: const er ikke ment til og endres", PI)
 
