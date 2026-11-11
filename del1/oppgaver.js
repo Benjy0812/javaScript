@@ -79,6 +79,9 @@ let temp = -4
 // Skriv ut typeof hp og typeof firstname.
 // Forventet: number
 //            string
+let hpType = typeof hp
+let forNavnType = typeof forNavn
+console.log(`\nOppgave 6: type of hp: ${hpType}, type of for navn: ${forNavnType}`)
 
 
 // Oppgave 7 (grunnleggende)
