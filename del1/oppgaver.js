@@ -85,6 +85,7 @@ console.log(`\nOppgave 6: type of hp: ${hpType}, type of for navn: ${forNavnType
 // Oppgave 7 (grunnleggende)
 // Bruk backticks og ${} til å skrive ut en setning med firstname og hp.
 // Forventet: Ola har 70 hp
+console.log(`\nOppgave 7: ${firstName} har ${hp} hp`)
 
 
 // Oppgave 8 (middels)
