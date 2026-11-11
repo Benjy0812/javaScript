@@ -109,6 +109,12 @@ console.log(Number("5") + 5)
 // Tips: Math.floor(17 / 4) runder ned.
 // Forventet: 4 lag
 //            1 til overs
+let elever = 17
+let grupper = 4
+
+let evenGroups = Math.floor(elever / grupper)
+let left = elever % grupper
+console.log(`\nOppgave 9: ${elever} elever, med ${grupper} grupper er ${evenGroups} per gruppe med ${left} til overs`)
 
 
 // ---------------- VALG MED IF ----------------
