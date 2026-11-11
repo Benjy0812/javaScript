@@ -94,6 +94,7 @@ console.log(`\nOppgave 7: ${firstName} har ${hp} hp`)
 // Forventet: 10
 //            55
 //            10
+console.log("Oppgave 8:")
 // 5 + 5 = 10
 console.log(5 + 5)
 // "5" er tekst, så + setter sammen tekst i stedet for å regne: "5" + 5 = "55"
