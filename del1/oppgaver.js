@@ -98,8 +98,8 @@ console.log(`\nOppgave 7: ${firstName} har ${hp} hp`)
 console.log(5 + 5)
 // "5" er tekst, så + setter sammen tekst i stedet for å regne: "5" + 5 = "55"
 console.log("5" + 5)
-// converterer "5" til 5 + 5 = 10
-console.log(Number("5") + 5)
+// converterer "5" og regner: 5 + 5 = 10
+console.log(Number("5") + 5)<
 
 
 // Oppgave 9 (middels)
