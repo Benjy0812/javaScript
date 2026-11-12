@@ -54,7 +54,7 @@ const MOMS = 0.25
 let pris = 200
 let prisMoms = MOMS * pris
 
-console.log(`\nOppgave 4: Pris med moms: ${pris + prisMoms}`)
+console.log(`\nOppgave 4: Pris med moms: ${pris + prisMoms} kr`)
 
 
 // Oppgave 5 (avansert)
@@ -134,10 +134,10 @@ console.log(`\nOppgave 9: ${antallLag} lag, ${tilOvers} til overs`)
 // Oppgave 10 (grunnleggende)
 // const temp = -8. Skriv ut "Kuldegrader" hvis temp er under 0.
 // Forventet: Kuldegrader
-const tempratur = -8
+const temperatur = -8
 
 console.log("\nOppgave 10:")
-if (tempratur < 0) {
+if (temperatur < 0) {
     console.log("Kuldegrader")
 } else {
     console.log("Varmegrader")
@@ -209,7 +209,7 @@ if (alder < 12) {
 }
 
 console.log("\nOppgave 14:")
-console.log(`Du betaler ${prisFjellheisen}kr siden du er ${alder}`)
+console.log(`Du betaler ${prisFjellheisen} kr siden du er ${alder} år`)
 
 
 // ---------------- LØKKER ----------------
@@ -235,7 +235,7 @@ for (let i = 1; i <= 5; i++){
 // og skriv ut "Liftoff!" etter løkka.
 // Forventet: 10, 9, 8 ... 1 (én per linje), så Liftoff!
 console.log("\nOppgave 16:")
-for (let i = 10; i >= 0; i--){
+for (let i = 10; i >= 1; i--){
     console.log(i)
 }
 console.log("Liftoff!")
@@ -251,7 +251,7 @@ for (let i = 1; i <= 100; i++) {
     sum += i
 }
 
-console.log(`\Oppgave 17: ${sum}`)
+console.log(`\nOppgave 17: ${sum}`)
 
 
 // Oppgave 18 (middels)
@@ -288,6 +288,7 @@ for (let i = 1; i <= 15; i++) {
     }
 }
 
+
 // ---------------- ARRAYS ----------------
 // En array er en liste: const fag = ["Utvikling", "Driftstøtte"];
 //   fag[0]          første verdi (indeks starter på 0)
@@ -295,8 +296,6 @@ for (let i = 1; i <= 15; i++) {
 //   fag.push("YFF") legger til bakerst
 //   fag.length      gir anallet variabler i array
 //   for (let i = 0; i < fag.length; i++) { console.log(fag[i]); }
-
-
 
 // Oppgave 20 (grunnleggende)
 // const byer = ["Tromsø", "Bodø", "Alta", "Harstad", "Narvik"];
