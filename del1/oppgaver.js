@@ -153,6 +153,16 @@ if (hp <= 0) {
 // før 10: "God morgen", før 18: "God dag", ellers: "God kveld".
 // Forventet: God kveld
 // Test også: endre klokka til 8 og kjør på nytt. Da skal det stå God morgen.
+const klokka = 21
+
+console.log("\nOppgave 12:")
+if (klokka < 10) {
+    console.log("God morgen")
+} else if (klokka < 18) {
+    console.log("God dag")
+} else {
+    console.log("God kveld")
+}
 
 
 // Oppgave 13 (middels)
