@@ -313,6 +313,9 @@ console.log(`\nOppgave 20: by: ${byer[0]}, byer: ${byer.length} `)
 // Tips: siste element er byer[byer.length - 1]
 // Forventet: Hammerfest
 //            6
+byer.push("Hammerfest")
+
+console.log(`\nOppgave 21: by: ${byer[byer.length -1 ]}, byer: ${byer.length}`)
 
 
 // Oppgave 22 (middels)
