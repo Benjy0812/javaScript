@@ -234,6 +234,11 @@ for (let i = 1; i <= 5; i++){
 // En rakett skal skytes opp fra Andøya. Tell ned fra 10 til 1 med en for-løkke,
 // og skriv ut "Liftoff!" etter løkka.
 // Forventet: 10, 9, 8 ... 1 (én per linje), så Liftoff!
+console.log("\nOppgave 16:")
+for (let i = 10; i >= 0; i--){
+    console.log(i)
+}
+console.log("Liftoff!")
 
 
 // Oppgave 17 (middels)
