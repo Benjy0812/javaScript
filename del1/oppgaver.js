@@ -245,6 +245,13 @@ console.log("Liftoff!")
 // Regn ut summen av alle tallene fra 1 til 100 med en løkke.
 // Tips: let sum = 0; før løkka.
 // Forventet: 5050
+let sum = 0
+
+for (let i = 1; i <= 100; i++) {
+    sum += i
+}
+
+console.log(`\Oppgave 17: ${sum}`)
 
 
 // Oppgave 18 (middels)
