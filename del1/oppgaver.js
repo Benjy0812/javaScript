@@ -140,6 +140,12 @@ if (tempratur < 0) {
 // Bruk hp fra oppgave 2. Hvis hp er 0 eller mindre: "Game over".
 // Ellers: "Spillet fortsetter".
 // Forventet: Spillet fortsetter
+console.log("\nOppgave 11:")
+if (hp <= 0) {
+    console.log("Game over")
+} else {
+    console.log("Spillet fortsetter")
+}
 
 
 // Oppgave 12 (middels)
