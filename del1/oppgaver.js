@@ -126,6 +126,14 @@ console.log(`\nOppgave 9: ${elever} elever, med ${grupper} grupper er ${evenGrou
 // Oppgave 10 (grunnleggende)
 // const temp = -8. Skriv ut "Kuldegrader" hvis temp er under 0.
 // Forventet: Kuldegrader
+const tempratur = -8
+
+console.log("\nOppgave 10:")
+if (tempratur < 0) {
+    console.log("Kuldegrader")
+} else {
+    console.log("Varmegrader")
+}
 
 
 // Oppgave 11 (grunnleggende)
