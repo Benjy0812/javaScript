@@ -303,6 +303,9 @@ for (let i = 1; i <= 15; i++) {
 // Skriv ut den første byen og hvor mange byer det er.
 // Forventet: Tromsø
 //            5
+const byer = ["Tromsø", "Bodø", "Alta", "Harstad", "Narvik"]
+
+console.log(`\nOppgave 20: by: ${byer[0]}, byer: ${byer.length} `)
 
 
 // Oppgave 21 (grunnleggende)
