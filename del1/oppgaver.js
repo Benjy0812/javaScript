@@ -258,6 +258,15 @@ console.log(`\Oppgave 17: ${sum}`)
 // Lag let bossHp = 100. Hvert slag tar 15 hp. Bruk en while-løkke og tell
 // hvor mange slag som trengs før bossHp er 0 eller mindre.
 // Forventet: 7 slag
+let bossHp = 100
+let hits = 0
+
+while (bossHp > 0) {
+    bossHp -= 15
+    hits++
+}
+
+console.log(`\nOppgave 18: ${hits} slag`)
 
 
 // Oppgave 19 (avansert)
