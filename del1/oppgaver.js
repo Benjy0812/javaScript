@@ -17,9 +17,9 @@
 // Lag let firstname og let lastname med ditt eget navn.
 // Skriv ut begge på samme linje.
 // Forventet: Ola Nordmann  (men ditt navn)
-
 let firstName = "Benjamin"
 let lastName = "Robertsen"
+
 console.log("\nOppgave 1:", firstName, lastName)
 
 
@@ -27,9 +27,10 @@ console.log("\nOppgave 1:", firstName, lastName)
 // Lag let hp = 100. Spilleren blir truffet av en isbjørn og mister 30 hp.
 // Endre hp (uten let foran) og skriv den ut.
 // Forventet: 70
-
 let hp = 100
+
 hp -= 30
+
 console.log("\nOppgave 2:", hp)
 
 
@@ -38,8 +39,10 @@ console.log("\nOppgave 2:", hp)
 // Skriv i oppgavearket hva feilmeldingen betyr, og fjern linja igjen.
 // Forventet: TypeError: Assignment to constant variable.
 const PI = 3.14159
+
+// Kan ikke endre på en variabel som er const
 // PI = 3
-console.log("\nOppgave 3: const er ikke ment til og endres", PI)
+console.log("\nOppgave 3: PI", PI)
 
 
 // Oppgave 4 (middels)
@@ -47,9 +50,11 @@ console.log("\nOppgave 3: const er ikke ment til og endres", PI)
 // Skriv ut prisen med moms.
 // Forventet: Pris med moms: 250 kr
 const MOMS = 0.25
+
 let pris = 200
 let prisMoms = MOMS * pris
-console.log(`\nOppgave 4: ${MOMS} * ${pris} = ${prisMoms} + ${pris} = ${prisMoms + pris}`)
+
+console.log(`\nOppgave 4: Pris med moms: ${pris + prisMoms}`)
 
 
 // Oppgave 5 (avansert)
@@ -57,13 +62,14 @@ console.log(`\nOppgave 4: ${MOMS} * ${pris} = ${prisMoms} + ${pris} = ${prisMoms
 // maks antall spillere på serveren (16), antall liv igjen (3),
 // høyden på Fløya (671), temperaturen i Tromsø nå (-4).
 // Forventet: ingenting i konsollen
-// Max spillere skal endres manuelt derfor valgte jeg const
+
+// Max spillere skal ikke endres når programet er i gang
 const MAXSPILLERE = 16
 // Liv kan endres hvis personen dør i spillet derfor valgte jeg let
 let liv = 3
 // Høyden kan ikke endres derfor valgte jeg const
 const fløyaH = 671
-// Temperatur vill endres derfor valgte jeg let
+// Temperatur vil endres derfor valgte jeg let
 let temp = -4
 
 
@@ -79,6 +85,7 @@ let temp = -4
 //            string
 let hpType = typeof hp
 let forNavnType = typeof firstName
+
 console.log(`\nOppgave 6: hp er et: ${hpType}, navn er en: ${forNavnType}`)
 
 
@@ -99,7 +106,7 @@ console.log("\nOppgave 8:")
 console.log(5 + 5)
 // "5" er tekst, så + setter sammen tekst i stedet for å regne: "5" + 5 = "55"
 console.log("5" + 5)
-// converterer "5" og regner: 5 + 5 = 10
+// konverterer "5" og regner: 5 + 5 = 10
 console.log(Number("5") + 5)
 
 
@@ -110,11 +117,12 @@ console.log(Number("5") + 5)
 // Forventet: 4 lag
 //            1 til overs
 let elever = 17
-let grupper = 4
+let perLag = 4
 
-let evenGroups = Math.floor(elever / grupper)
-let left = elever % grupper
-console.log(`\nOppgave 9: ${elever} elever, med ${grupper} grupper er ${evenGroups} per gruppe med ${left} til overs`)
+let antallLag = Math.floor(elever / perLag)
+let tilOvers = elever % perLag
+
+console.log(`\nOppgave 9: ${antallLag} lag, ${tilOvers} til overs`)
 
 
 // ---------------- VALG MED IF ----------------
