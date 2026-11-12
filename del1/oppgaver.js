@@ -224,6 +224,10 @@ console.log(`Du betaler ${prisFjellheisen}kr siden du er ${alder}`)
 //            3
 //            4
 //            5
+console.log("\nOppgave 15:")
+for (let i = 1; i <= 5; i++){
+    console.log(i)
+}
 
 
 // Oppgave 16 (grunnleggende)
