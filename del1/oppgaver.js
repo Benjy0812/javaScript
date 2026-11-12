@@ -170,6 +170,15 @@ if (klokka < 10) {
 // const skydekke = 20 og const time = 22. Bruk &&.
 // Forventet: Gode sjanser for nordlys
 // Test også: skydekke = 80 skal gi: Dårlige sjanser i kveld
+const skydekke = 20
+const time = 22
+
+console.log("\nOppgave 13:")
+if (skydekke < 30 && time >= 18) {
+    console.log("Gode sjanser for nordlys")
+} else {
+    console.log("Dårlige sjanser i kveld")
+}
 
 
 // Oppgave 14 (avansert)
