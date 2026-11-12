@@ -355,6 +355,16 @@ console.log(`\nOppgave 23: ${kulde}`)
 // b) Lag en ny array uten "drikk" ved å bruke en løkke og push.
 // Forventet: 3
 //            [ 'sverd', 'skjold', 'fiskestang' ]
+const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"]
+
+let drikk = 0
+
+for (let i = 0; i < inventory.length; i++) {
+    if (inventory[i] === "drikk") {
+        drikk ++
+    }
+
+}
 
 
 // Oppgave 25 (avansert)
