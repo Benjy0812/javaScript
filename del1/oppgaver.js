@@ -321,6 +321,15 @@ console.log(`\nOppgave 21: by: ${byer[byer.length -1 ]}, byer: ${byer.length}`)
 // Oppgave 22 (middels)
 // Skriv ut alle byene med en for-løkke.
 // Forventet: Tromsø, Bodø, Alta, Harstad, Narvik, Hammerfest (én per linje)
+console.log("Oppgave 22:")
+
+for (let i = 0; i < byer.length; i++) {
+    if (i < byer.length - 1) {
+        console.log(`${byer[i]},`)
+    } else {
+        console.log(byer[i])
+    }
+}
 
 
 // Oppgave 23 (middels)
