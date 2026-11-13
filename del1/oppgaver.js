@@ -381,3 +381,7 @@ console.log(nyInventory)
 // inventory er const, men push virker likevel. Hvorfor?
 // Skriv svaret i oppgavearket.
 // Forventet: ingenting i konsollen
+
+// const hindrer at variabelen får en ny verdi, men tillater endring av innholdet
+// Holder f.eks at en variabel alltid er en array og ikke kan endres til en string
+// Å skrive inventory = ["oppgave"] gir en ny verdi, og det er ikke lov med const
