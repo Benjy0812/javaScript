@@ -8,7 +8,7 @@ Svar når du er ferdig med oppgavene i `oppg1_grunnleggende.js`. Skriv med egne 
 
 **1. Hva er forskjellen på `let` og `const`? Når bruker du hvilken?**
 
-> let hvis den skal endres når programmet kjører og const hvis den ikke skal endres mens programmet kjører og noen tilfeller i et array.
+> let hvis den skal endres når programmet kjører og const hvis den ikke skal endres mens programmet kjører. En const array kan likevel få nye elementer med push, fordi const bare hindrer at variabelen settes til en ny array.
 
 **2. Hvorfor ble `"5" + 5` til `55`, mens `5 + 5` ble `10`?**
 
@@ -16,23 +16,23 @@ Svar når du er ferdig med oppgavene i `oppg1_grunnleggende.js`. Skriv med egne 
 
 **3. Hva gjør `%`? Gi et eksempel fra oppgavene der du brukte den.**
 
-> Oppgave 9 brukte jeg % for hvor mange som ikke er til overs etter lagene er laget.
+> % gir resten etter divisjon, for eksempel 17 % 5 = 2. I oppgave 9 brukte jeg % for å finne hvor mange som er til overs etter at lagene er laget.
 
 **4. Hva er forskjellen på `=` og `===`?**
 
-> = er for å gi en variabel data og === er denne like denne
+> = gir en variabel en verdi, og === sjekker om to verdier er like, både verdi og type. 5 === "5" er false.
 
 **5. Forklar de tre delene i denne linja:** `for (let i = 1; i <= 5; i++)`
 
-> let i = 1; lager en variabel med tallet 1 og i <= 5 mens i er mindre enn 5 loop og i++ pluser på i.
+> let i = 1 lager en variabel som starter på 1, og det skjer bare en gang i starten. i <= 5 sier hvor lenge løkka kjører, så lenge i er mindre enn eller lik 5, og det sjekkes før hver runde. i++ legger til 1 på i etter hver runde.
 
 **6. Når er en `while`-løkke bedre enn en `for`-løkke? Hva kan gå galt med en `while`-løkke?**
 
-> while er bra hvis man skal bruker flere for løkker og i mens en verdi blir til denne verdien
+> while er bedre når jeg ikke vet hvor mange ganger løkka skal kjøre, men kjører til noe stemmer. Hvis det aldri slutter å stemme, får jeg en uendelig løkke.
 
 **7. Hvorfor er den første byen i lista `byer[0]` og ikke `byer[1]`?**
 
-> 0 er en verdi og telling i kode starter med 0 derfor starter første tingen i array med 0
+> 0 er en verdi, og telling i kode starter med 0, derfor starter første tingen i arrayet med 0
 
 ---
 
@@ -62,7 +62,7 @@ console.log(lag.length);
 console.log(lag[1]);
 ```
 
-> 4 og Ulvene, først pusher man Nordlys til lag så da er lag 4 og var 3, men endrer ikke hvor i listen Ulvene er siden den legger Nordlys på slutten.
+> 4 og Ulvene, først pusher man Nordlys til lag så lag var 3 og blir 4, men endrer ikke hvor i listen Ulvene er siden den legger Nordlys på slutten.
 
 **10. Denne koden skal skrive ut 1, 2 og 3, men gjør det ikke. Hva er feil?**
 
@@ -72,7 +72,7 @@ for (let i = 1; i < 3; i++) {
 }
 ```
 
-> i < 3 stopper på 2 og skriver derfor ikke ut 3.
+> i < 3 stopper på 2 og skriver derfor ikke ut 3. Det må være i <= 3.
 
 ---
 
@@ -80,15 +80,15 @@ for (let i = 1; i < 3; i++) {
 
 **11. Hvilken oppgave var vanskeligst, og hvordan løste du den?**
 
-> Synes ikke de var vanskelig med strevde litt med greater og leser then jeg blander dem så det var det vanskeligste
+> Jeg synes ikke oppgavene var vanskelige, men jeg slet litt med større enn og mindre enn (greater than og less than) fordi jeg blander dem. Jeg forstår det bedre nå, men er fortsatt litt usikker.
 
 **12. Hvilken feilmelding fikk du oftest? Hva betydde den?**
 
-> Fikk veldig lite compiler meldinger husker ikke hvilken men fikk fleste i VS Code.
+> Jeg fikk veldig få feilmeldinger, og de fleste så jeg i VS Code. Jeg fikset dem selv, men husker ikke hvilke det var.
 
 **13. Hva gjorde du når du sto fast? Hva vil du gjøre annerledes neste gang?**
 
-> Sjekket docs på w3schools og MDN Web Docs.
+> Jeg sjekket dokumentasjonen på W3Schools og MDN Web Docs. Jeg vil ikke gjøre noe annerledes neste gang, men kanskje bruke AI hvis oppgaven er veldig vanskelig eller jeg ikke forstår den, og be om hint.
 
 **14. Hvor langt kom du?**
 
@@ -111,4 +111,4 @@ for (let i = 1; i < 3; i++) {
 
 **16. Hva vil du øve mer på før vi går videre til funksjoner?**
 
-> Ingen ting kan alt, kan også funksjoner.
+> Ingenting, jeg kan alt, jeg kan også funksjoner.
