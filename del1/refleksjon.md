@@ -8,31 +8,31 @@ Svar når du er ferdig med oppgavene i `oppg1_grunnleggende.js`. Skriv med egne 
 
 **1. Hva er forskjellen på `let` og `const`? Når bruker du hvilken?**
 
-> _Skriv svaret ditt her._
+> let hvis den skal endres når programmet kjører og const hvis den ikke skal endres mens programmet kjører og noen tilfeller i et array.
 
 **2. Hvorfor ble `"5" + 5` til `55`, mens `5 + 5` ble `10`?**
 
-> _Skriv svaret ditt her._
+> "5" er tekst, så + setter sammen tekst i stedet for å regne: "5" + 5 = "55" og 5 + 5 = 10 er begge tall.
 
 **3. Hva gjør `%`? Gi et eksempel fra oppgavene der du brukte den.**
 
-> _Skriv svaret ditt her._
+> Oppgave 9 brukte jeg % for hvor mange som ikke er til overs etter lagene er laget.
 
 **4. Hva er forskjellen på `=` og `===`?**
 
-> _Skriv svaret ditt her._
+> = er for å gi en variabel data og === er denne like denne
 
 **5. Forklar de tre delene i denne linja:** `for (let i = 1; i <= 5; i++)`
 
-> _Skriv svaret ditt her._
+> let i = 1; lager en variabel med tallet 1 og i <= 5 mens i er mindre enn 5 loop og i++ pluser på i.
 
 **6. Når er en `while`-løkke bedre enn en `for`-løkke? Hva kan gå galt med en `while`-løkke?**
 
-> _Skriv svaret ditt her._
+> while er bra hvis man skal bruker flere for løkker og i mens en verdi blir til denne verdien
 
 **7. Hvorfor er den første byen i lista `byer[0]` og ikke `byer[1]`?**
 
-> _Skriv svaret ditt her._
+> 0 er en verdi og telling i kode starter med 0 derfor starter første tingen i array med 0
 
 ---
 
@@ -51,7 +51,7 @@ if (temp < -5) {
 }
 ```
 
-> _Skriv svaret ditt her._
+> Kaldt siden -3 er over -5 og under 0
 
 **9. Hva skrives ut her? Svar før du tester.**
 
@@ -62,7 +62,7 @@ console.log(lag.length);
 console.log(lag[1]);
 ```
 
-> _Skriv svaret ditt her._
+> 4 og Ulvene, først pusher man Nordlys til lag så da er lag 4 og var 3, men endrer ikke hvor i listen Ulvene er siden den legger Nordlys på slutten.
 
 **10. Denne koden skal skrive ut 1, 2 og 3, men gjør det ikke. Hva er feil?**
 
@@ -72,7 +72,7 @@ for (let i = 1; i < 3; i++) {
 }
 ```
 
-> _Skriv svaret ditt her._
+> i < 3 stopper på 2 og skriver derfor ikke ut 3.
 
 ---
 
@@ -80,35 +80,35 @@ for (let i = 1; i < 3; i++) {
 
 **11. Hvilken oppgave var vanskeligst, og hvordan løste du den?**
 
-> _Skriv svaret ditt her._
+> Synes ikke de var vanskelig med strevde litt med greater og leser then jeg blander dem så det var det vanskeligste
 
 **12. Hvilken feilmelding fikk du oftest? Hva betydde den?**
 
-> _Skriv svaret ditt her._
+> Fikk veldig lite compiler meldinger husker ikke hvilken men fikk fleste i VS Code.
 
 **13. Hva gjorde du når du sto fast? Hva vil du gjøre annerledes neste gang?**
 
-> _Skriv svaret ditt her._
+> Sjekket docs på w3schools og MDN Web Docs.
 
 **14. Hvor langt kom du?**
 
 | Nivå          | Kryss av |
 | ------------- | -------- |
-| Grunnleggende |          |
-| Middels       |          |
-| Avansert      |          |
+| Grunnleggende | x        |
+| Middels       | x        |
+| Avansert      | x        |
 
 **15. Kryss av for det du kan nå.**
 
 | Jeg kan...                                         | Ja  | Litt | Nei |
 | -------------------------------------------------- | --- | ---- | --- |
-| lage variabler med `let` og `const`                |     |      |     |
-| bruke tekst og tall, og sette dem sammen med `${}` |     |      |     |
-| ta valg med `if`, `else if` og `else`              |     |      |     |
-| skrive en `for`-løkke                              |     |      |     |
-| hente, legge til og gå gjennom verdier i en array  |     |      |     |
-| lese en feilmelding og finne riktig linje          |     |      |     |
+| lage variabler med `let` og `const`                | x   |      |     |
+| bruke tekst og tall, og sette dem sammen med `${}` | x   |      |     |
+| ta valg med `if`, `else if` og `else`              | x   |      |     |
+| skrive en `for`-løkke                              | x   |      |     |
+| hente, legge til og gå gjennom verdier i en array  | x   |      |     |
+| lese en feilmelding og finne riktig linje          | x   |      |     |
 
 **16. Hva vil du øve mer på før vi går videre til funksjoner?**
 
-> _Skriv svaret ditt her._
+> Ingen ting kan alt, kan også funksjoner.
