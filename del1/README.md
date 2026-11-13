@@ -235,7 +235,7 @@ Pass på: brukt på tekst skjøter `+` tekst sammen i stedet for å regne.
 
 **Svar oppgave 8:** Hvorfor blir `"5" + 5` annerledes enn `5 + 5`?
 
-> "5" er tekst, så + setter sammen tekst i stedet for å regne: "5" + 5 = "55" og 5 + 5 = 10 tall.
+> "5" er tekst, så + setter sammen tekst i stedet for å regne: "5" + 5 = "55" og 5 + 5 = 10 er begge tall.
 
 #### Valg med if
 
