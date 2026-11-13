@@ -355,6 +355,7 @@ console.log(`\nOppgave 23: ${kulde}`)
 // Forventet: 3
 //            [ 'sverd', 'skjold', 'fiskestang' ]
 const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"]
+const nyInventory = []
 
 let drikk = 0
 
@@ -364,6 +365,16 @@ for (let i = 0; i < inventory.length; i++) {
     }
 
 }
+
+for (let i = 0; i < inventory.length; i++) {
+    if (inventory[i] !== "drikk") {
+        nyInventory.push(inventory[i])
+    }
+
+}
+
+console.log(`\nOppgave 24: ${drikk}`)
+console.log(nyInventory)
 
 
 // Oppgave 25 (avansert)
