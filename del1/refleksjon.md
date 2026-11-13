@@ -92,22 +92,22 @@ for (let i = 1; i < 3; i++) {
 
 **14. Hvor langt kom du?**
 
-| Nivå | Kryss av |
-|---|---|
-| Grunnleggende |  |
-| Middels |  |
-| Avansert |  |
+| Nivå          | Kryss av |
+| ------------- | -------- |
+| Grunnleggende |          |
+| Middels       |          |
+| Avansert      |          |
 
 **15. Kryss av for det du kan nå.**
 
-| Jeg kan... | Ja | Litt | Nei |
-|---|---|---|---|
-| lage variabler med `let` og `const` |  |  |  |
-| bruke tekst og tall, og sette dem sammen med `${}` |  |  |  |
-| ta valg med `if`, `else if` og `else` |  |  |  |
-| skrive en `for`-løkke |  |  |  |
-| hente, legge til og gå gjennom verdier i en array |  |  |  |
-| lese en feilmelding og finne riktig linje |  |  |  |
+| Jeg kan...                                         | Ja  | Litt | Nei |
+| -------------------------------------------------- | --- | ---- | --- |
+| lage variabler med `let` og `const`                |     |      |     |
+| bruke tekst og tall, og sette dem sammen med `${}` |     |      |     |
+| ta valg med `if`, `else if` og `else`              |     |      |     |
+| skrive en `for`-løkke                              |     |      |     |
+| hente, legge til og gå gjennom verdier i en array  |     |      |     |
+| lese en feilmelding og finne riktig linje          |     |      |     |
 
 **16. Hva vil du øve mer på før vi går videre til funksjoner?**
 
