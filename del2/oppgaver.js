@@ -62,7 +62,13 @@ function gjennomsnitt(tall) {
 // Oppgave 6: Hvor mange dager med kuldegrader var det? (Trenger du vinterdekk?)
 //     Returner HVOR MANGE tall som er under 0. Bruk for-løkke + if.
 function antallUnderNull(tall) {
-  // LØSNING
+  let underNull = 0
+  for (let i = 0; i < tall.length; i++){
+    if (tall[i] < 0) {
+      underNull ++
+    }
+  }
+  return underNull
 }
 
 
