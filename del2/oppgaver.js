@@ -47,17 +47,16 @@ function celsiusTilFahrenheit(celsius) {
 // Oppgave 4: Værappen skal regne ut ukas gjennomsnitt. Første steg: summen.
 //     Returner summen av alle tallene i en array. Bruk en for-løkke.
 function sum(tall) {
-    let temp
+  let tempSum = 0
   for (let i = 0; i < tall.length; i++) {
-    let tempGjennomsnitt =+ sum(tall[i])
-    console.log(tempGjennomsnitt)
+    tempSum += tall[i]
   }
-    return tempGjenomsnitt
+  return tempSum
 }
 
 // Oppgave 5: Returner gjennomsnittet av tallene. Gjenbruk sum()!
 function gjennomsnitt(tall) {
-  // LØSNING
+  return sum(tall) / tall.length
 }
 
 // Oppgave 6: Hvor mange dager med kuldegrader var det? (Trenger du vinterdekk?)
