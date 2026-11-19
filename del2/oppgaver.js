@@ -77,7 +77,13 @@ function antallUnderNull(tall) {
 // Oppgave 7: Hva var den varmeste dagen? Samme logikk som en highscore-liste.
 //     Returner det største tallet i arrayen – UTEN Math.max og UTEN .sort()
 function storste(tall) {
-  // LØSNING
+  let highestTemp = tall[0]
+  for (let i = 1; i < tall.length; i++) {
+    if (highestTemp < tall[i]) {
+      highestTemp = tall[i]
+    }
+  }
+  return highestTemp
 }
 
 // Oppgave 8: Returner en NY array med bare kuldegradene (tall under 0).
