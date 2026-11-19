@@ -89,7 +89,13 @@ function storste(tall) {
 // Oppgave 8: Returner en NY array med bare kuldegradene (tall under 0).
 //     Den opprinnelige arrayen skal ikke endres.
 function bareKuldegrader(tall) {
-  // LØSNING
+  let coldTemps = []
+  for (let i = 0; i < tall.length; i++) {
+    if (tall[i] < 0) {
+      coldTemps.push(tall[i])
+    }
+  }
+  return coldTemps
 }
 
 // Oppgave 9: Sorter tallene fra lavest til høyest – UTEN .sort().
