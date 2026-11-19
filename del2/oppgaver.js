@@ -242,10 +242,8 @@ function toppTre(resultater) {
 
 
 
-
-// =====================================================
+// Fikset med KI
 // AUTOMATISK SJEKK – ikke endre noe under denne linja
-// =====================================================
 let antallOk = 0;
 let antallSjekker = 0;
 
@@ -281,7 +279,12 @@ sjekk("7  storste(temperaturer)", () => storste(temperaturer), 1);
 sjekk("7  storste([-5, -2, -9])", () => storste([-5, -2, -9]), -2);
 sjekk("8  bareKuldegrader(temperaturer)", () => bareKuldegrader(temperaturer), [-4, -6, -2, -8, -11, -3]);
 sjekk("9  sorterStigende(temperaturer)", () => sorterStigende(temperaturer), [-11, -8, -6, -4, -3, -2, 1]);
-sjekk("8–9 temperaturer er uendret", () => temperaturer, [-4, -6, -2, 1, -8, -11, -3]);
+sjekk("8–9 temperaturer er uendret", () => {
+  const kuldegrader = bareKuldegrader(temperaturer);
+  const sortert = sorterStigende(temperaturer);
+  if (!Array.isArray(kuldegrader) || !Array.isArray(sortert)) return "bareKuldegrader og sorterStigende må returnere en array";
+  return temperaturer;
+}, [-4, -6, -2, 1, -8, -11, -3]);
 
 console.log("\n===== DEL 2: SPILL =====");
 console.log("\n--- GRØNN ---");
@@ -307,6 +310,9 @@ sjekk("16 totalInntekt(deltakere)", () => totalInntekt(deltakere), 700);
 
 console.log("\n--- RØD ---");
 sjekk("17 toppTre(resultater)", () => toppTre(resultater), ["Kari", "Jonas", "Ali"]);
-sjekk("17 resultater er uendret", () => resultater.map((r) => r.navn), ["Ola", "Kari", "Ali", "Emma", "Jonas"]);
+sjekk("17 resultater er uendret", () => {
+  if (!Array.isArray(toppTre(resultater))) return "toppTre må returnere en array";
+  return resultater.map((r) => r.navn);
+}, ["Ola", "Kari", "Ali", "Emma", "Jonas"]);
 
 console.log(`\nDu har ${antallOk} av ${antallSjekker} OK.`);
