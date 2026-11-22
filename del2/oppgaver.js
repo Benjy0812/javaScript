@@ -102,7 +102,19 @@ function bareKuldegrader(tall) {
 //     Lag din egen sorteringsalgoritme (f.eks. boblesortering).
 //     Returner en NY array, ikke endre den opprinnelige.
 function sorterStigende(tall) {
-  // LØSNING
+  const array = [...tall]
+
+  for (let i = 0; i < array.length; i++) {
+    // loops sorting, stops before last and empty and skips the sorted ones at the end
+    for (let j = 0; j < array.length - 1 - i; j++) {
+      // is 7 bigger than 4
+      if (array[j] > array[j + 1]) {
+        // replaces [7, 4] with [4, 7]
+        [array[j], array[j + 1]]  =  [array[j + 1], array[j]]
+      }
+    }
+  }
+  return array
 }
 
 
