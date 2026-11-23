@@ -17,92 +17,89 @@
 // Du skal bruke arrayen "temperaturer" i oppgavene som handler om temperatur.
 const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
 
-
 // ---------- GRØNN ----------
 
 // Oppgave 1: Når en spiller logger inn på Minecraft-serveren, skal hun få en hilsen.
 //     hilsen("Ola") -> "Hei, Ola!"
 //     Tips: bruk en template literal: `Hei, ${navn}!`
 function hilsen(navn) {
-    const heiNavn =  `Hei, ${navn}!`
-  return heiNavn
+  const heiNavn = `Hei, ${navn}!`;
+  return heiNavn;
 }
 
 // Oppgave 2: Hvor mange blokker trengs til gulvet i en hytte på 4 x 5 blokker?
 //     Returner arealet av et rektangel (bredde ganger høyde)
 function rektangelAreal(bredde, hoyde) {
-  return bredde * hoyde
+  return bredde * hoyde;
 }
 
 // Oppgave 3: En venn i USA spør på Discord hvor kaldt det er i Tromsø.
 //     Gjør om celsius til fahrenheit.  Formel: F = C * 9/5 + 32
 //     (Den motsatte formelen er C = (F - 32) * 5/9.)
 function celsiusTilFahrenheit(celsius) {
-  return (celsius * 9) / 5 + 32
+  return (celsius * 9) / 5 + 32;
 }
-
 
 // ---------- GUL ----------
 
 // Oppgave 4: Værappen skal regne ut ukas gjennomsnitt. Første steg: summen.
 //     Returner summen av alle tallene i en array. Bruk en for-løkke.
 function sum(tall) {
-  let tempSum = 0
+  let tempSum = 0;
   for (let i = 0; i < tall.length; i++) {
-    tempSum += tall[i]
+    tempSum += tall[i];
   }
-  return tempSum
+  return tempSum;
 }
 
 // Oppgave 5: Returner gjennomsnittet av tallene. Gjenbruk sum()!
 function gjennomsnitt(tall) {
-  return sum(tall) / tall.length
+  return sum(tall) / tall.length;
 }
 
 // Oppgave 6: Hvor mange dager med kuldegrader var det? (Trenger du vinterdekk?)
 //     Returner HVOR MANGE tall som er under 0. Bruk for-løkke + if.
 function antallUnderNull(tall) {
-  let underNull = 0
-  for (let i = 0; i < tall.length; i++){
+  let underNull = 0;
+  for (let i = 0; i < tall.length; i++) {
     if (tall[i] < 0) {
-      underNull ++
+      underNull++;
     }
   }
-  return underNull
+  return underNull;
 }
-
 
 // ---------- RØD ----------
 
 // Oppgave 7: Hva var den varmeste dagen? Samme logikk som en highscore-liste.
 //     Returner det største tallet i arrayen – UTEN Math.max og UTEN .sort()
 function storste(tall) {
-  let highestTemp = tall[0]
+  let highestTemp = tall[0];
   for (let i = 1; i < tall.length; i++) {
     if (highestTemp < tall[i]) {
-      highestTemp = tall[i]
+      highestTemp = tall[i];
     }
   }
-  return highestTemp
+  return highestTemp;
 }
 
 // Oppgave 8: Returner en NY array med bare kuldegradene (tall under 0).
 //     Den opprinnelige arrayen skal ikke endres.
 function bareKuldegrader(tall) {
-  let coldTemps = []
+  let coldTemps = [];
   for (let i = 0; i < tall.length; i++) {
     if (tall[i] < 0) {
-      coldTemps.push(tall[i])
+      coldTemps.push(tall[i]);
     }
   }
-  return coldTemps
+  return coldTemps;
 }
 
 // Oppgave 9: Sorter tallene fra lavest til høyest – UTEN .sort().
 //     Lag din egen sorteringsalgoritme (f.eks. boblesortering).
 //     Returner en NY array, ikke endre den opprinnelige.
 function sorterStigende(tall) {
-  const array = [...tall]
+  const array = [...tall];
 
   for (let i = 0; i < array.length; i++) {
     // loops sorting, stops before last and empty and skips the sorted ones at the end
@@ -110,13 +107,12 @@ function sorterStigende(tall) {
       // is 7 bigger than 4
       if (array[j] > array[j + 1]) {
         // replaces [7, 4] with [4, 7]
-        [array[j], array[j + 1]]  =  [array[j + 1], array[j]]
+        [array[j], array[j + 1]] = [array[j + 1], array[j]];
       }
     }
   }
-  return array
+  return array;
 }
-
 
 // #####################################################
 // DEL 2: SPILL (oppgave 10–14)
@@ -125,23 +121,21 @@ function sorterStigende(tall) {
 // Data: poeng per runde i en turnering
 const runder = [120, 85, 140, 95, 110];
 
-
 // ---------- GRØNN ----------
 
 // Oppgave 10: Du lager en ny bruker i WoW Forever, og vi ønsker årstallet spilleren er født
 // skal inkluderes i brukernavnet. Vi får da: Gamertag = navn + tall.
 //     lagGamertag("Ola", 99) -> "Ola99"
 function lagGamertag(navn, tall) {
-  return navn + tall
+  return navn + tall;
 }
-
 
 // Oppgave 11: Er spilleren gammel nok til spillet? Returner true eller false.
 //     erGammelNok(16, 18) -> false
 //     erGammelNok(18, 18) -> true
 //     Tips: return alder >= grense;  (sammenligningen gir true/false)
 function erGammelNok(alder, grense) {
-  return alder >= grense
+  return alder >= grense;
 }
 
 // Oppgave 12: BreiLAN innfører billettpriser. VG1 betaler 100 kr og resten av skolen 150 kr.
@@ -151,11 +145,10 @@ function erGammelNok(alder, grense) {
 //     Tips: bruk if og else.
 function billettpris(erVG1) {
   if (erVG1) {
-    return 100
+    return 100;
   }
-  return 150
+  return 150;
 }
-
 
 // ---------- GUL ----------
 
@@ -177,15 +170,14 @@ function velgFraksjon(alliance, horde, valg) {
 //     antallOver(runder, 100) -> 3
 //     Tips: samme oppskrift som antallUnderNull() i oppgave 6.
 function antallOver(poeng, grense) {
-  let overGrense = 0
-  for (let i = 0; i < poeng.length; i++){
+  let overGrense = 0;
+  for (let i = 0; i < poeng.length; i++) {
     if (poeng[i] > grense) {
-      overGrense ++
+      overGrense++;
     }
   }
-  return overGrense
+  return overGrense;
 }
-
 
 // #####################################################
 // DEL 3: BREILAN (oppgave 15–17)
@@ -201,10 +193,10 @@ function antallOver(poeng, grense) {
 // Aldersgrenser i turneringene. Slik henter du en verdi: aldersgrenser["GTA 6"] -> 18
 const aldersgrenser = {
   "GTA 6": 18,
-  "CS2": 18,
-  "Fortnite": 12,
+  CS2: 18,
+  Fortnite: 12,
   "WoW Forever": 12,
-  "Minecraft": 7,
+  Minecraft: 7,
 };
 
 // Påmeldte deltakere. Slik henter du en verdi: deltakere[0].navn -> "Ola"
@@ -226,7 +218,6 @@ const resultater = [
   { navn: "Jonas", poeng: 480 },
 ];
 
-
 // ---------- GRØNN ----------
 
 // Oppgave 15: BreiLAN trenger en funksjon som sjekker aldersgrensen før
@@ -235,9 +226,8 @@ const resultater = [
 //     kanDelta(16, "GTA 6")    -> false
 //     kanDelta(16, "Fortnite") -> true
 function kanDelta(alder, spill) {
-    return erGammelNok(alder, aldersgrenser[spill])
+  return erGammelNok(alder, aldersgrenser[spill]);
 }
-
 
 // ---------- GUL ----------
 
@@ -247,7 +237,6 @@ function kanDelta(alder, spill) {
 function totalInntekt(deltakere) {
   // LØSNING
 }
-
 
 // ---------- RØD ----------
 
@@ -259,10 +248,6 @@ function toppTre(resultater) {
   // LØSNING
 }
 
-
-
-
-
 // #####################################################
 // EGENVURDERING
 // #####################################################
@@ -271,14 +256,6 @@ function toppTre(resultater) {
 // Dette fikk jeg godt til:
 // Dette var vanskelig:
 // Dette vil jeg øve mer på:
-
-
-
-
-
-
-
-
 
 // Fikset med KI
 // AUTOMATISK SJEKK – ikke endre noe under denne linja
@@ -296,7 +273,9 @@ function sjekk(beskrivelse, kjor, forventet) {
   }
   const likt = JSON.stringify(faktisk) === JSON.stringify(forventet);
   if (likt) antallOk++;
-  console.log(`${likt ? "OK  " : "FEIL"}  ${beskrivelse}  (fikk: ${JSON.stringify(faktisk)}, forventet: ${JSON.stringify(forventet)})`);
+  console.log(
+    `${likt ? "OK  " : "FEIL"}  ${beskrivelse}  (fikk: ${JSON.stringify(faktisk)}, forventet: ${JSON.stringify(forventet)})`,
+  );
 }
 
 console.log("\n===== DEL 1: VÆRAPPEN =====");
@@ -310,19 +289,36 @@ console.log("\n--- GUL ---");
 sjekk("4  sum(temperaturer)", () => sum(temperaturer), -33);
 sjekk("4  sum([])", () => sum([]), 0);
 sjekk("5  gjennomsnitt([2, 4, 6])", () => gjennomsnitt([2, 4, 6]), 4);
-sjekk("6  antallUnderNull(temperaturer)", () => antallUnderNull(temperaturer), 6);
+sjekk(
+  "6  antallUnderNull(temperaturer)",
+  () => antallUnderNull(temperaturer),
+  6,
+);
 
 console.log("\n--- RØD ---");
 sjekk("7  storste(temperaturer)", () => storste(temperaturer), 1);
 sjekk("7  storste([-5, -2, -9])", () => storste([-5, -2, -9]), -2);
-sjekk("8  bareKuldegrader(temperaturer)", () => bareKuldegrader(temperaturer), [-4, -6, -2, -8, -11, -3]);
-sjekk("9  sorterStigende(temperaturer)", () => sorterStigende(temperaturer), [-11, -8, -6, -4, -3, -2, 1]);
-sjekk("8–9 temperaturer er uendret", () => {
-  const kuldegrader = bareKuldegrader(temperaturer);
-  const sortert = sorterStigende(temperaturer);
-  if (!Array.isArray(kuldegrader) || !Array.isArray(sortert)) return "bareKuldegrader og sorterStigende må returnere en array";
-  return temperaturer;
-}, [-4, -6, -2, 1, -8, -11, -3]);
+sjekk(
+  "8  bareKuldegrader(temperaturer)",
+  () => bareKuldegrader(temperaturer),
+  [-4, -6, -2, -8, -11, -3],
+);
+sjekk(
+  "9  sorterStigende(temperaturer)",
+  () => sorterStigende(temperaturer),
+  [-11, -8, -6, -4, -3, -2, 1],
+);
+sjekk(
+  "8–9 temperaturer er uendret",
+  () => {
+    const kuldegrader = bareKuldegrader(temperaturer);
+    const sortert = sorterStigende(temperaturer);
+    if (!Array.isArray(kuldegrader) || !Array.isArray(sortert))
+      return "bareKuldegrader og sorterStigende må returnere en array";
+    return temperaturer;
+  },
+  [-4, -6, -2, 1, -8, -11, -3],
+);
 
 console.log("\n===== DEL 2: SPILL =====");
 console.log("\n--- GRØNN ---");
@@ -333,9 +329,21 @@ sjekk("12 billettpris(true)", () => billettpris(true), 100);
 sjekk("12 billettpris(false)", () => billettpris(false), 150);
 
 console.log("\n--- GUL ---");
-sjekk("13 velgFraksjon(5000, 5000, 'Horde')", () => velgFraksjon(5000, 5000, "Horde"), "Welcome to the Horde!");
-sjekk("13 velgFraksjon(4500, 5500, 'Alliance')", () => velgFraksjon(4500, 5500, "Alliance"), "Welcome to the Alliance!");
-sjekk("13 velgFraksjon(4500, 5500, 'Horde')", () => velgFraksjon(4500, 5500, "Horde"), "The faction is currently unavailable on this ruleset due to population imbalance");
+sjekk(
+  "13 velgFraksjon(5000, 5000, 'Horde')",
+  () => velgFraksjon(5000, 5000, "Horde"),
+  "Welcome to the Horde!",
+);
+sjekk(
+  "13 velgFraksjon(4500, 5500, 'Alliance')",
+  () => velgFraksjon(4500, 5500, "Alliance"),
+  "Welcome to the Alliance!",
+);
+sjekk(
+  "13 velgFraksjon(4500, 5500, 'Horde')",
+  () => velgFraksjon(4500, 5500, "Horde"),
+  "The faction is currently unavailable on this ruleset due to population imbalance",
+);
 sjekk("14 antallOver(runder, 100)", () => antallOver(runder, 100), 3);
 
 console.log("\n===== DEL 3: BREILAN =====");
@@ -347,10 +355,19 @@ console.log("\n--- GUL ---");
 sjekk("16 totalInntekt(deltakere)", () => totalInntekt(deltakere), 700);
 
 console.log("\n--- RØD ---");
-sjekk("17 toppTre(resultater)", () => toppTre(resultater), ["Kari", "Jonas", "Ali"]);
-sjekk("17 resultater er uendret", () => {
-  if (!Array.isArray(toppTre(resultater))) return "toppTre må returnere en array";
-  return resultater.map((r) => r.navn);
-}, ["Ola", "Kari", "Ali", "Emma", "Jonas"]);
+sjekk("17 toppTre(resultater)", () => toppTre(resultater), [
+  "Kari",
+  "Jonas",
+  "Ali",
+]);
+sjekk(
+  "17 resultater er uendret",
+  () => {
+    if (!Array.isArray(toppTre(resultater)))
+      return "toppTre må returnere en array";
+    return resultater.map((r) => r.navn);
+  },
+  ["Ola", "Kari", "Ali", "Emma", "Jonas"],
+);
 
 console.log(`\nDu har ${antallOk} av ${antallSjekker} OK.`);
