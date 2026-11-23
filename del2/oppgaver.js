@@ -150,7 +150,10 @@ function erGammelNok(alder, grense) {
 //     billettpris(false) -> 150
 //     Tips: bruk if og else.
 function billettpris(erVG1) {
-  // LØSNING
+  if (erVG1) {
+    return 100
+  }
+  return 150
 }
 
 
