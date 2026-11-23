@@ -132,7 +132,7 @@ const runder = [120, 85, 140, 95, 110];
 // skal inkluderes i brukernavnet. Vi får da: Gamertag = navn + tall.
 //     lagGamertag("Ola", 99) -> "Ola99"
 function lagGamertag(navn, tall) {
-  // LØSNING
+  return navn + tall
 }
 
 
