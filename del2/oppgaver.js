@@ -235,7 +235,7 @@ const resultater = [
 //     kanDelta(16, "GTA 6")    -> false
 //     kanDelta(16, "Fortnite") -> true
 function kanDelta(alder, spill) {
-  // LØSNING
+    return erGammelNok(alder, aldersgrenser[spill])
 }
 
 
