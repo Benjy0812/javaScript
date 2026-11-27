@@ -163,7 +163,7 @@ function billettpris(erVG1) {
 //
 //     Tips: andel = antall i valgt fraksjon / totalt * 100
 function velgFraksjon(alliance, horde, valg) {
-  // LØSNING
+  // Forstår ikke oppgaven. Den er uklar. Jeg har dyskalkuli.
 }
 
 // Oppgave 14: Hvor mange runder fikk laget MER enn grensen?
