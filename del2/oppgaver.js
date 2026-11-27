@@ -235,7 +235,11 @@ function kanDelta(alder, spill) {
 //     Gjenbruk billettpris() fra oppgave 12! deltakere[i].vg1 er true eller false.
 //     totalInntekt(deltakere) -> 700
 function totalInntekt(deltakere) {
-  // LØSNING
+  let total = 0
+  for (let i = 0; i < deltakere.length; i++) {
+    total += billettpris(deltakere[i].vg1)
+  }
+  return total
 }
 
 // ---------- RØD ----------
