@@ -273,9 +273,9 @@ function toppTre(resultater) {
 // #####################################################
 //
 // Skriv en kort egenvurdering av arbeidet ditt. Skriv rett etter kolonet.
-// Dette fikk jeg godt til:
-// Dette var vanskelig:
-// Dette vil jeg øve mer på:
+// Dette fikk jeg godt til: Løkker og if-setninger (oppgave 14, 16 og 17), og å gjenbruke funksjoner (oppgave 15 og 16).
+// Dette var vanskelig: Oppgave 13 fikk jeg ikke gjort. Teksten var uklar, og prosent er vanskelig for meg fordi jeg har dyskalkuli. Jeg fikk hint fra KI underveis.
+// Dette vil jeg øve mer på: Sortering og regning. Noen oppgaver er veldig uklare. De kunne brukt mer generelle eksempler i stedet for veldig spesifikke ting.
 
 // Fikset med KI
 // AUTOMATISK SJEKK – ikke endre noe under denne linja
