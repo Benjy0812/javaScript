@@ -249,7 +249,23 @@ function totalInntekt(deltakere) {
 //     UTEN .sort(). Arrayen resultater skal ikke endres.
 //     toppTre(resultater) -> ["Kari", "Jonas", "Ali"]
 function toppTre(resultater) {
-  // LØSNING
+ const arrayRes = [...resultater];
+
+  for (let i = 0; i < arrayRes.length; i++) {
+    // loops sorting, stops before last and empty and skips the sorted ones at the end
+    for (let j = 0; j < arrayRes.length - 1 - i; j++) {
+      // is 7 bigger than 4
+      if (arrayRes[j].poeng < arrayRes[j + 1].poeng) {
+        // replaces [7, 4] with [4, 7]
+        [arrayRes[j], arrayRes[j + 1]] = [arrayRes[j + 1], arrayRes[j]];
+      }
+    }
+  }
+  const navn = []
+  for (let i = 0; i < 3; i++) {
+    navn.push(arrayRes[i].navn)
+  }
+  return navn;
 }
 
 // #####################################################
