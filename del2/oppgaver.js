@@ -235,11 +235,11 @@ function kanDelta(alder, spill) {
 //     Gjenbruk billettpris() fra oppgave 12! deltakere[i].vg1 er true eller false.
 //     totalInntekt(deltakere) -> 700
 function totalInntekt(deltakere) {
-  let total = 0
+  let total = 0;
   for (let i = 0; i < deltakere.length; i++) {
-    total += billettpris(deltakere[i].vg1)
+    total += billettpris(deltakere[i].vg1);
   }
-  return total
+  return total;
 }
 
 // ---------- RØD ----------
@@ -249,7 +249,7 @@ function totalInntekt(deltakere) {
 //     UTEN .sort(). Arrayen resultater skal ikke endres.
 //     toppTre(resultater) -> ["Kari", "Jonas", "Ali"]
 function toppTre(resultater) {
- const arrayRes = [...resultater];
+  const arrayRes = [...resultater];
 
   for (let i = 0; i < arrayRes.length; i++) {
     // loops sorting, stops before last and empty and skips the sorted ones at the end
@@ -261,9 +261,9 @@ function toppTre(resultater) {
       }
     }
   }
-  const navn = []
+  const navn = [];
   for (let i = 0; i < 3; i++) {
-    navn.push(arrayRes[i].navn)
+    navn.push(arrayRes[i].navn);
   }
   return navn;
 }
